@@ -1,22 +1,19 @@
-# Welcome to your Lovable project
+# Welcome to your project
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/adbb1935-ccaa-4ba5-96c7-4e52dd38f981
+**URL**: https://webstunning.vercel.app/
+
+![image](https://github.com/user-attachments/assets/ffffda83-c656-4a5e-b75a-6f4f7aad119d)
+
 
 ## How can I edit this code?
 
 There are several ways of editing your application.
 
-**Use Lovable**
+### Use your preferred IDE
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/adbb1935-ccaa-4ba5-96c7-4e52dd38f981) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in the repository.
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
@@ -36,13 +33,13 @@ npm i
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Edit a file directly in GitHub
 
 - Navigate to the desired file(s).
 - Click the "Edit" button (pencil icon) at the top right of the file view.
 - Make your changes and commit the changes.
 
-**Use GitHub Codespaces**
+### Use GitHub Codespaces
 
 - Navigate to the main page of your repository.
 - Click on the "Code" button (green button) near the top right.
@@ -52,7 +49,7 @@ npm run dev
 
 ## What technologies are used for this project?
 
-This project is built with .
+This project is built with:
 
 - Vite
 - TypeScript
@@ -62,8 +59,9 @@ This project is built with .
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/adbb1935-ccaa-4ba5-96c7-4e52dd38f981) and click on Share -> Publish.
+You can deploy your project using platforms like Netlify, Vercel, or your preferred hosting service.
 
 ## I want to use a custom domain - is that possible?
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+For deploying your project under your own domain, we recommend using Netlify or Vercel. Visit their respective documentation for more details on custom domains.
+
