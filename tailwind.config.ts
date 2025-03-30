@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,31 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				blue: {
+					50: '#EBF2FF',
+					100: '#D6E4FF',
+					200: '#A8C8FF',
+					300: '#7AACFF',
+					400: '#4C91FF',
+					500: '#1E75FF',
+					600: '#0052CC',
+					700: '#003E99',
+					800: '#002966',
+					900: '#001533',
+				},
+				teal: {
+					50: '#E6FFFA',
+					100: '#B2F5EA',
+					200: '#81E6D9',
+					300: '#4FD1C5',
+					400: '#38B2AC',
+					500: '#319795',
+					600: '#2C7A7B',
+					700: '#285E61',
+					800: '#234E52',
+					900: '#1D4044',
+				},
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -70,26 +95,51 @@ export default {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' },
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' },
+				},
+				'fade-in': {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' },
+				},
+				'fade-up': {
+					'0%': { opacity: '0', transform: 'translateY(20px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' },
+				},
+				'fade-down': {
+					'0%': { opacity: '0', transform: 'translateY(-20px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' },
+				},
+				'reveal-right': {
+					'0%': { width: '0%' },
+					'100%': { width: '100%' },
+				},
+				'gradient-x': {
+					'0%, 100%': {
+						'background-position': '0% 50%',
 					},
-					to: {
-						height: '0'
-					}
-				}
+					'50%': {
+						'background-position': '100% 50%',
+					},
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.6s ease-out',
+				'fade-up': 'fade-up 0.6s ease-out',
+				'fade-down': 'fade-down 0.6s ease-out',
+				'reveal-right': 'reveal-right 1s ease-out forwards',
+				'gradient-x': 'gradient-x 15s ease infinite',
+			},
+			fontFamily: {
+				sans: ['Inter', 'sans-serif'],
+				heading: ['Plus Jakarta Sans', 'sans-serif'],
+			},
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
